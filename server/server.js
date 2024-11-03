@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(cors());app.use(bodyParser.json());// MongoDB connection
-mongoose.connect('mongodb://192.168.68.127:27017/myreactdemo', {       
+mongoose.connect('mongodb://localhost:27017/myreactdemo', {       
     useNewUrlParser: true,   
     useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
